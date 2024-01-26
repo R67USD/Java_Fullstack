@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromdemo2</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="center">
+            <h3>Create Account</h3>
+        </legend>
+        <form action="../Form.html" method="get">
+            <table align="center">
+                <tr>
+                    <td><label for="firstnm" id="fname" name="fname">FristName</label></td>
+                    <td><label for="Lastnm" id="Lname" name="Lname">LastName</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td><input type="text" id="Lname" name="Lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email" id="email" name="email">Email</label></td>
+                    <td><label for="birthday">BirthDay</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email"></td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password" id="pword" name="pword">Password</label></td>
+                    <td><label for="cpassword" id="cpswd" name="cpswd">Confirm Password</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="password" id="pword" name="pword"></td>
+                    <td><input type="password" id="cpswd" name="cpswd"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Gender" id="g" name="g">Gender</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="radio" id="f" name="m1">Male</td>
+                    <td><input type="radio" id="m" name="m1">FeMale</td>
+                </tr>
+
+                <tr>
+                    <td><label for="hobbies" id="h" name="h">Hobbies</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="ch1" name="ch1">Music</td>
+                    <td><input type="checkbox" id="ch2" name="ch2">Sports</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="ch3" name="ch3">Travel</td>
+                    <td><input type="checkbox" id="ch4" name="ch4">Movies</td>
+                </tr>
+
+                <tr>
+                    <td><label for="sincome" id="sincome" name="sincome">Source of income</label></td>
+                    <td><label for="income" id="income" name="income">Income</label></td>
+                </tr>
+
+                <tr>
+                    <td><select name="sincome" id="sincome">
+                            <option>Employee</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Farmer">Farmer</option>
+                            <option value="Doctor">Doctor</option>
+                        </select></td>
+                    <td><input type="range" id="income" name="income" min="10" max="50">10K-50K</td>
+                </tr>
+
+                <tr>
+                    <td><label for="pic" id="pic" name="pic"> Upload picture</label></td>
+                    <td><label for="age" id="age" name="age"> Enter your Age</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="file" id="mypic" name="mypic" multiple></td>
+                    <!-- mulyipe is used for multiple file uploads   -->
+                    <td><input type="number" id="age" name="age" min="20" max="50" step="3"></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="favcolor"> Select your favorite color:</label></td>
+                    <td><input type="color" id="favcolor" name="favcolor"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Enter your number:</label></td>
+                    <td><input type="tel" name="phone" id="phone" pattern="[0-9]{10}"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                    <td><input type="reset" value="reset"></td>
+                </tr>
+            </table>
+    </fieldset>
+    </form>
+</body>
+
+</html>

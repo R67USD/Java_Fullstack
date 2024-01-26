@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formdemo3</title>
+</head>
+<body>
+    <fieldset >
+        <legend>login from</legend>
+        <form action="Form.html" method="get">
+            <label for="uname">UserName</label>
+            <input type="text" name="uname" id="uname" required placeholder="Enter the User name"><br> <br>
+            <label for="upwd">Password</label>
+            <input type="password" name="upwd" id="upwd" maxlength="8" minlength="6" placeholder="Enter your password"> <br> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email "><br> <br>
+            <label >Hobbies</label>
+            <input type="checkbox" id="ch1" name="ch1"/>Reading
+            <input type="checkbox" id="ch2" name="ch2"/>Singing
+            <input type="checkbox" id="ch3" name="ch3"/>Watching movies <br> <br>
+            <label >Gender</label>
+            <input type="radio" name="r1" id="r1"/>Male
+            <input type="radio" name="r1" id="r2"/>Femal <br><br>
+            <label for="Age">Age</label>
+            <input type="number" min="18" max="65" name="age" id="Age" step="2"  placeholder="Enter your age">
+            <!-- DropDownBox -->
+            <label >Courses</label>
+            <select name="Courses" id="Courses">
+                <option value="">Html</option>
+                <option value="">CSS</option>
+                <option value="">JavaScript</option>
+                <option value="">Bootstrap</option>
+            </select> <br> <br>
+
+            <input type="submit" id="submit" name="submit"> 
+            <input type="reset" id="reset" name="reset">
+            
+        </form>
+    </fieldset>
+</body>
+</html>
