@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div {
+            width: 600px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0px auto;  
+        }
+
+        #border{
+            border: 6px;
+            border-color: red;
+            border-style: dotted;
+            border-radius: 5px;
+        }
+
+        p{
+            border: 5px dotted greenyellow; /* shorthandpropertie*/
+            border-radius: 10px;
+        }
+
+        #psides {
+            border-style: dotted solid solid dashed; /*border sides shorthand properties */
+            border-color: rgb(106, 80 , 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Box model Example and some border properties</h1>
+    <div>
+        <img id="img1" src="/MEDIA/img/img.jpg" width="600px" height="300px" alt="404"><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum omnis ab nisi dolorum natus provident ex, aliquam quia temporibus, blanditiis odio ullam facilis dignissimos soluta! Ullam voluptas velit dicta.
+    </div>
+    <div id="border">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorum sequi molestias asperiores tempora perspiciatis ex fugit, quaerat vel officia tenetur a quae odio repudiandae distinctio nisi atque, laboriosam inventore.</p>
+        <p id="psides">
+            <strong>Para 2</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eligendi, odit rerum illum suscipit, placeat odio quas voluptatum molestiae beatae alias enim nemo quidem sequi cumque, eius vel eveniet reiciendis?
+        </p>
+
+    </div>
+</body>
+</html>

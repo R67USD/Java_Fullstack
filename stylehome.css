@@ -1,0 +1,32 @@
+
+h1{
+    text-align: center;
+}
+
+#card_parent {
+    display: flex;
+    position: relative;
+    flex-direction: row;  /* Change to row */
+    justify-content: center;
+    
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+    display: flex; /* Add this line */
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: center; /* Add this line */
+  }
+  
+
+#butn{
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: blue;
+}

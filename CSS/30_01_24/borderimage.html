@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorderImage</title>
+    <style>
+        div{
+            border: 15px solid;
+            border-image-source: url(../../MEDIA/img/border.png);
+            border-image-slice:20;
+            font-size: 2rem;
+            height: 300px;
+            padding: 2px;
+            border-image-repeat: repeat;
+            border-image-outset: 5px;
+        }
+        
+
+        p{
+            border: 15px solid;
+            border-image: inherit; /* shorthand property for border-image */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad esse quae vitae voluptatum eum vel blanditiis amet dolor aspernatur nihil debitis hic quisquam, molestiae, suscipit ut. Eveniet, dolor ut!
+        </p>
+
+    </div>
+</body>
+</html>
