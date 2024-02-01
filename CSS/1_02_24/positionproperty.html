@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionProperty </title>
+    <style>
+        div{
+            /* color: black; */
+            /* background-color: yellow; */
+            /* height: 300px; */
+            right: 90px;
+            border: 2px solid red;
+            font-size: 2rem;
+            background-color: yellow;
+            top: 100px;
+            position: static;
+        }
+
+        p.fixed 
+        {
+            position: fixed;
+            border: 2px solid green;
+            height: 400px;
+            width: 400px;
+            bottom: 80px ; /*From browser bottom windows*/
+            margin-left: 450px;
+            /* right: 10px; */
+            background-color: rgb(235, 117, 28);
+        }
+
+        #container{
+            height: 800px;
+            border: 6px solid purple;
+            background-color: auto;
+        }   
+
+        h2 {
+            position: relative;
+            left: 50px;
+            top: 10px;
+            border: 2px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam labore nisi tenetur dolorem dolores. Excepturi hic eos vitae autem quod cum corporis. Minima aliquid excepturi corporis minus quasi dolores adipisci.
+    </div>
+
+    <section id="container">
+        <p class="fixed"><b>This is a paragraph</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eius consequuntur corporis eum voluptatem harum unde ullam, veritatis ducimus quisquam in officia ipsa cupiditate inventore rerum vero facilis laborum. Nihil.</p>
+    </section>
+    <h2>This headinf is at relative position</h2>
+</body>
+</html>
+
+
+<!-- Z-index property
+It is used to control the overlapping of the html elements with respect to them -->
