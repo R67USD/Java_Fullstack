@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div p{
+            color: rgb(47, 47, 241);
+            background-color: rgb(222, 222, 104);
+            font-size: 2rem;
+        }
+        /* Div p will apply all css property to all div's p childs */
+        div > p{
+            color: rgb(239, 8, 27);
+            background-color: rgb(225, 197, 129);
+        }
+        /* Div p will only apply  css property to direct div's p childs */
+
+        ul + p{
+            color: brown;
+            background-color: yellow;
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /* ul + p Will apply css property to immediate sibling of ul */
+
+        /* ul ~p{
+            font-weight: bold;
+            font-size: 1rem;
+            color: purple;  
+            background-color: yellowgreen;
+        } */
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraph 1 of div1</p>
+        <p>Paragraph 2 of div1</p>
+        <section><p>Paragraph 3 of div1</p></section>
+        <p> new Paragraph 4 direct child in div </p>
+    </div>
+    <p>Paragraph 5 outside of div1-----1</p>
+    <ul>
+        <li>java</li>
+        <li>Advanced java</li>
+        <li>spring framework</li>
+    </ul>
+    <p>Paragraph after ul tag ---2</p>
+    <i>This is italic tag</i>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Paragraph tag after ul tag ----3</p>
+    <b>This is bold</b>
+    <p>Paragraph not immediate sibling of ul ---4</p>
+
+    <section><p>efwefefwefwefwf</p></section>
+    <p>Paragraph bot immediate after div 5</p>
+</body>
+</html>
