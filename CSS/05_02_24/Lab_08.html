@@ -2,70 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Lab_08</title>
+
     <style>
+      /* Style the body element */
       body {
+        /* Set background color to dark gray */
         background-color: #292a2d;
+        /* Center text content */
         text-align: center;
       }
 
+      /* Style elements with the "radial" class */
       .radial {
+        /* Set dimensions for the element */
         height: 300px;
         width: 250px;
-        background-image: repeating-radial-gradient(
-          #47101f,
-          #b23157,
-          #e07dab 1%
-        );
-        /* background-image: repeating-radial-gradient(red, blue    ); */
+        /* Apply a repeating radial gradient background */
+        background-image: repeating-radial-gradient(#47101f, #b23157, #e07dab 1%);
+        /* Center the element horizontally */
         margin: 0 auto;
       }
+
+      /* Style elements with the "hovertrans" class */
       .hovertrans {
+        /* Set dimensions for the element */
         height: 250px;
         width: 250px;
+        /* Center the element horizontally */
         margin: 0 auto;
+        /* Add spacing above */
         margin-top: 3%;
+        /* Set background color */
         background-color: #e07dab;
       }
+
+      /* Style elements with the "hovertrans" class when hovered over */
       .hovertrans:hover {
+        /* Center the element horizontally */
         margin: 0 auto;
+        /* Change background color on hover */
         background-color: #47101f;
+        /* Scale the element on hover */
         transform: scale(1.5);
+        /* Shift the element to the left on hover */
         margin-left: 10%;
+        /* Uncomment this line to add a smooth animation transition */
         /* animation-duration: 800ms; */
       }
 
+      /* Style the first div element in its parent */
       div:first-child {
+        /* Center the element horizontally */
         margin: 0 auto;
+        /* Set background color */
         background-color: #b23157;
+        /* Set dimensions for the element */
         height: 200px;
         width: 400px;
       }
 
+      /* Style elements with the "assm4" class */
       .assm4 {
+        /* Center the element horizontally */
         margin: 0 auto;
+        /* Add spacing above */
         margin-top: 2%;
+        /* Set dimensions for the element */
         height: 200px;
         width: 200px;
+        /* Apply a linear gradient background */
         background-image: linear-gradient(-45deg, red, blue 50%, pink 90%);
       }
     </style>
   </head>
+
   <body>
     <h1>Assment01</h1>
+
     <div class="radial">This is repeating radial-gradient</div>
 
     <h1>Assment02</h1>
+
     <div class="hovertrans">This is a hovertrans.</div>
 
     <h1>Assment03</h1>
+
     <div>
       this is parent
       <div class="child">this is a child element</div>
     </div>
 
     <h1>Assment04</h1>
+
     <div class="assm4"></div>
   </body>
 </html>
