@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElements</title>
+
+    <style>
+        /* Style for the entire body content */
+        body {
+            /* Centers all content within the body (remove if not needed) */
+            text-align: center; /* Remove if not needed */
+        }
+
+        /* Style for the first letter of h1 elements */
+        h1::first-letter {
+            font-family: Lucida Calligraphy; /* Fallback fonts recommended */
+            font-size: 3cm; /* Adjust as needed for design */
+            color: red;
+            text-shadow: 5px 8px 9px green;
+        }
+
+        /* Style for all h1 elements */
+        h1 {
+            color: blue;
+        }
+
+        /* Style for the div element */
+        div::before {
+            /* Inserts content before the div content */
+            content: "Demo for PseudoElement";
+            color: blueviolet;
+            font-size: 1cm; /* Add semicolon */
+        }
+
+        /* Style for selected text within h2 elements */
+        h2::selection { /* Use ::selection directly */
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 title="This is Heading">Welcome to the world of designing</h1>
+
+    <div>This is div element in html</div>
+
+    <h2>This is a Heading2 to show the selection Element</h2>
+</body>
+</html>

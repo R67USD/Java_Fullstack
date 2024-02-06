@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinearGradients</title>
+
+    <style>
+        /* Style for the first gradient */
+        .grad1 {
+            height: 200px;
+            /* Diagonal linear gradient from red to yellow */
+            background-image: linear-gradient(to bottom left, rgb(232, 80, 80), yellow);
+        }
+
+        /* Style for the paragraph element */
+        p {
+            /* Linear gradient from red to blue, passing through green */
+            background-image: linear-gradient(red, green, blue);
+            width: 200px;
+            height: 300px;
+        }
+
+        /* Style for the repeating gradient */
+        #reapting {
+            width: 300px;
+            height: 250px;
+            margin-top: 20px;
+            /* Repeating linear gradient with red, yellow, and green stripes */
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grad1">This is a diagonal linear gradient</div>
+
+    <p>Linear gradient with multiple colors</p>
+
+    <div id="reapting">Repeating Radial gradient</div> </body>
+</html>

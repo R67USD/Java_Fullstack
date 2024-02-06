@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadialGradient</title>
+
+    <style>
+        /* Style for the first radial gradient */
+        #radial {
+            /* Radial gradient with blue at 5%, green at 15%, and red at 60% */
+            background: radial-gradient(blue 5%, green 15%, red 60%);
+
+            /* Fallback for older browsers that don't support radial gradients */
+            background-color: blue;
+
+            height: 600px;
+            width: 600px;
+        }
+
+        /* Style for the circle shape */
+        #circle {
+            margin-top: 20px;
+            width: 500px;
+            height: 400px;
+            /* Circular radial gradient with blue, pink, and yellow */
+            background: radial-gradient(circle, blue, pink, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="radial">Radial gradient</div>
+    <div id="circle">This is a circle shape with a gradient</div>
+</body>
+</html>

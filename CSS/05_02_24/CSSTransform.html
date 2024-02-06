@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSTransform</title>
+    <style>
+        body{
+            background-color: #292a2d;
+        }
+        .translate{
+            height: 200px;
+            width: 500px;
+            transform: translate(80px, 50px);
+            background-color: #FF0000;
+            border: 2px solid;
+        }
+        .rotate{
+            margin-top: 8%;
+            width: 300px;
+            height: 250px;
+            border: 2px solid;
+            transform: rotate(60deg);
+            background-color: #FF2323  ;
+        }
+        .scale{
+            margin-top: 10%;
+            margin-left: 10%;
+            height: 300px;
+            width: 250px;
+            transform: scale(1.2);
+            border: 2px solid;
+            background-color: #FF5757;
+        }
+        .skew{
+            border: 2px solid;
+            margin-top: 10%;
+            height: 250px;
+            width: 300px;
+            background-color: #FF9494;
+            transform: skew(30deg, 20deg);
+        }
+        
+        .matrix{
+            margin-top: 8%;
+            width: 300px;
+            height: 250px;
+            border: 2px solid;
+            margin-left: 10%;
+            transform: matrix(1, 0, 0.5,1, 150, 0);
+            background-color: #FFC0C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">This is Translate</div>
+    <div class="rotate">This is a roation property</div>
+    <div class="scale">This is a scale property of transform</div>
+    <div class="skew">This div is skewed by 30deg x and 20deg in y</div>
+    <div class="matrix">This is matrix property of transform</div>
+</body>
+</html>

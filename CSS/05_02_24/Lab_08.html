@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab_08</title>
+    <style>
+      body {
+        background-color: #292a2d;
+        text-align: center;
+      }
+
+      .radial {
+        height: 300px;
+        width: 250px;
+        background-image: repeating-radial-gradient(
+          #47101f,
+          #b23157,
+          #e07dab 1%
+        );
+        /* background-image: repeating-radial-gradient(red, blue    ); */
+        margin: 0 auto;
+      }
+      .hovertrans {
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 3%;
+        background-color: #e07dab;
+      }
+      .hovertrans:hover {
+        margin: 0 auto;
+        background-color: #47101f;
+        transform: scale(1.5);
+        margin-left: 10%;
+        /* animation-duration: 800ms; */
+      }
+
+      div:first-child {
+        margin: 0 auto;
+        background-color: #b23157;
+        height: 200px;
+        width: 400px;
+      }
+
+      .assm4 {
+        margin: 0 auto;
+        margin-top: 2%;
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(-45deg, red, blue 50%, pink 90%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Assment01</h1>
+    <div class="radial">This is repeating radial-gradient</div>
+
+    <h1>Assment02</h1>
+    <div class="hovertrans">This is a hovertrans.</div>
+
+    <h1>Assment03</h1>
+    <div>
+      this is parent
+      <div class="child">this is a child element</div>
+    </div>
+
+    <h1>Assment04</h1>
+    <div class="assm4"></div>
+  </body>
+</html>
