@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball animation</title>
+    <style>
+      div {
+        margin-top: 350px;
+        height: 40px;
+        border-radius: 100%;
+        width: 40px;
+        background-color: black;
+        animation: bounce 1.9s infinite alternate ease-in-out ;
+        position: relative;
+        
+
+      }
+
+      @keyframes bounce {
+        0%{
+          transform: translateY(0);
+          left: 0;
+          border: none;
+        }
+        30% {
+          transform: translateY(-30px);
+          left: 2%;
+          /* border: 2px solid red; */
+        }
+        60% {
+          transform: translateY(50px);
+          left: 40%;
+        }
+        100% {
+            transform: translateY(-50px);
+            width: 70px;
+            height: 70px;
+            left: 100%;
+            border: 2px solid red;
+        }
+      }
+
+      hr{
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        
+    </div>
+    <hr>
+  </body>
+</html>

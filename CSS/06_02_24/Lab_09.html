@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_09</title>
+    <style>
+        #Ass1{
+            height: 400px;
+            width: 250px;
+            border: 2px solid;
+            padding: 10px;
+            animation: Ass1 2s ease-out;
+        }
+
+        @keyframes Ass1 {
+            form{
+                transform: scale();
+            }
+            50%{
+                transform: scale(0.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        #Ass2 {
+            margin-top: 2%;
+            height: 180px;
+            width: 250px;
+            border: 2px solid ;
+            padding: 10px;
+        }
+
+        input{
+            height: 50px;
+            margin-top: 10%;
+            width: auto;
+            outline: none;
+            border-radius: 1px;
+            transition: width 3s, background-color 900ms, color 1s ;
+        }
+        input:focus{
+            border: rgb(51, 51, 51) solid;
+            width: 200px ;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #Ass3{
+            margin-top: 2%;
+            height: 200px;
+            width: 200px;
+            border: 3px solid;
+            padding: 10px;
+            background-color: black;
+            color: wheat;
+            /* transition: display 9ms ; */
+        }
+
+        #Ass3:hover{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="Ass3">
+        create one div 
+    </div>
+    <div id="Ass1">
+        This is a div with Scale animation
+    </div>
+    <div id="Ass2">
+        This is a text box effect 
+        <input type="text" >
+    </div>
+</body>
+</html>

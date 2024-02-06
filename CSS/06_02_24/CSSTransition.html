@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSTransition</title>
+    <style>
+        div{
+            height: 300px;
+            width: 200px;
+            padding: 10px;
+            border: 2px solid;
+            background-color: azure;
+            transition: height 900ms, width 900ms, background-color 3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div:hover{
+            height: 200px;
+            width: 800px;
+            background-color: bisque;
+        }
+
+        #d2{
+            margin-top: 2%;
+            transition: font-size 1s, width 900ms, background-color 900ms;
+        }
+
+        #d2:hover{
+            font-size: 25px;
+            background-color: darkorchid;
+            width: 800px;
+
+        }
+        .dec{
+            border: 1px solid;
+
+            height: 100px;
+            width: 100px;
+            margin-top: 3%;
+            transition:  transform 900ms;
+        }
+
+        .dec:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        This is diveith transition effect on width
+        <p>Move the cursor over the div element above, to see the transition effect</p>
+    </div>
+    <div id="d2">
+        <b>This is transition with multiple properties </b>
+        <p>(Move your cursor on me to see the effect)</p>
+    </div>
+
+    <p class="dec">
+        rotate
+    </p>
+</body>
+</html>

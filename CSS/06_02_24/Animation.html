@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes animated {
+            form{
+                background-color: rgb(255, 255, 255);
+                /* opacity: 100%; */
+            }
+            50% {
+                transform: rotate(15deg) ;
+            }
+            to {
+                background-color: rgb(15, 15, 15);
+                /* opacity: 0%; */
+            }
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            border: 5px rgb(117, 117, 116) solid;
+            animation: animated 5s  ;
+            animation-timing-function: ease-in;
+            background-color: rgb(0, 0, 0);
+            color: whitesmoke;
+            padding: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        #direction {
+            width: 200px;
+            height: 150px;
+            border: 5px rgb(117, 117, 116) solid;
+            margin-top: 10%;
+            font-size: 1rem;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            animation: animated2;
+            animation-duration: 5s;
+            /* animation-direction: reverse; */
+            animation-timing-function: ease-in;
+            /* animation-iteration-count: infinite; */
+        }
+
+        @keyframes animated2 {
+            form{
+                background-color: black;
+                left: 0px;
+                top: 0px;
+            }
+            50% {
+                background-color: rgb(39, 39, 39);
+                left: 0px;
+                top: 0px;
+            }
+            100% {
+                background-color: rgb(77, 77, 77);
+                left: 200px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a animation for rotating and changing the color of div 
+    </div>
+    <div id="direction">This Div is with reverse direction</div>
+</body>
+</html>
