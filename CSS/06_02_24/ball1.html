@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball2</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border: 15px dashed black;
+            position: relative;
+            animation: animate 5s infinite linear ;
+        }
+
+        @keyframes animate {
+            0%{
+                transform: rotate(-360deg);
+                left: -20%;
+                
+            }
+            100%{
+                transform: rotate(360deg);
+                left: 110%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>

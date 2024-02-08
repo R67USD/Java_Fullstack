@@ -1,0 +1,13 @@
+body{
+    background-color:pink;
+}
+
+@media (max-width: 1250px) and (min-width:600px)  {
+    body{
+        background-color: lightgreen;
+        font-size: 50px;
+        font-family: monospace;
+        display: flex;
+        color: black;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font faceRule</title>
+    <style>
+      /* Define two custom fonts using the @font-face rule */
+      @font-face {
+        font-family: Firstfamily;
+        src: url(/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+      }
+
+      @font-face {
+        font-family: secondfamily;
+        src: url(/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYBLACKITALIC.OTF);
+      }
+
+      /* Center align the text in the body */
+      body {
+        text-align: center;
+      }
+
+      /* Style the div elements with the Firstfamily font and other properties */
+      div {
+        font-family: Firstfamily;
+        padding: 5px;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+      }
+
+      /* Apply additional styles to the div with id "div2" */
+      #div2 {
+        margin-top: 20px;
+        font-family: secondfamily;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is Font face Rule</h1>
+    <div>
+      <p>This is a heading</p>
+    </div>
+    <div id="div2">
+      <p>This is second Heading</p>
+    </div>
+  </body>
+</html>
