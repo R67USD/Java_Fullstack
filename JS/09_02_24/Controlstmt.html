@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlstmt</title>
+</head>
+<body>
+    <script>
+        var n1 = 5;
+        if (n1%2 ==0) {
+            document.write("Num is even" + "<br>");
+        } else {
+            document.write("Num is odd" + "<br>");
+        }
+
+        document.write("Out of the block"+"<br>")
+        var x = 5, y=3;
+        var choice = "sub";
+        switch (choice) {
+            case 'add':document.write(x+yield);
+                break;
+            case 'sub':document.writeln("sub is "+ (x-y));
+                break;
+            case 'mul':document.writeln(x*y);
+            default:document.write("Wrong choice");
+        }
+        document.write("<br>")
+
+        
+    </script>
+</body>
+</html>

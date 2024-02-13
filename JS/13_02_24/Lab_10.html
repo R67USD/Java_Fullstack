@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab_10</title>
+    <script>
+      for (var num = 10; num >= 0; num--) {
+        document.write(num + "<br>");
+      }
+
+      function PopupBox() {
+        var a = 10;
+
+        alert("This a val of Variable " + a);
+      }
+
+      function Even(a, b) {
+        for (var num = a; num <= b; num++) {
+          let fin = a;
+
+          if (num % 2 == 0) {
+            fin = num;
+            document.write(fin + "<br>");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <br />
+    <input type="button" value="ClickHere" onclick="PopupBox()" />
+    <br />
+
+    <script>
+      Even(1, 20);
+    </script>
+  </body>
+</html>

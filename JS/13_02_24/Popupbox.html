@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopupBox</title>
+</head>
+<body>
+    <button onclick="displayMsg()">Display Welcome Message</button>
+    <button onclick="confirmBox()">Show Confirmation Box</button>
+    <button onclick="promptDemo()">Prompt for Addition</button>
+
+    <script>
+        // Global variable (accessible throughout the script)
+        var y = 10;
+
+        // Function to display a welcome message
+        function displayMsg() {
+            alert("Welcome to JavaScript!");
+        }
+
+        // Function to show a confirmation box and write results
+        function confirmBox() {
+            // Local variable (only accessible within this function)
+            var x = confirm("Select OK or Cancel");
+
+            if (x) {
+                document.write("You selected OK<br>");
+            } else {
+                document.write("You selected Cancel<br>");
+            }
+
+            // Access and write the global variable's value
+            document.write("Value of y is " + y + "<br>");
+        }
+
+        // Function to prompt for two numbers and display their sum
+        function promptDemo() {
+            // Use parseInt to convert input strings to numbers
+            var a = parseInt(prompt("Enter the value for a"));
+            var b = parseInt(prompt("Enter the value for b"));
+
+            // Calculate and display the sum
+            var c = a + b;
+            document.write("Addition is " + c);
+        }
+    </script>
+</body>
+</html>
+ 

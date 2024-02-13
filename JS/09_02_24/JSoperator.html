@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSoperators</title>
+    <style>
+        body{
+            font-family: monospace;
+            /* font-weight: bolder; */
+            font-size: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+        // Output of Logical operators
+        document.write("------------------------OutPut of Logical opeartors------------------" );
+        document.write("<br>");
+        let a = 5;
+        // Logical operators
+        // 0 - false, 1 - true
+        document.write(1 && 1);
+        document.write(0 && 1);
+        document.write(1 && 0);
+        document.write("<br>");
+
+        // Logical or
+        document.write("------------------------OutPut of Logical Or------------------" );
+        document.write("<br>");
+        document.writeln(1 || 1);
+        document.writeln(0 || 1);
+        document.writeln(0 || 0);
+        document.writeln(1 || 0);
+
+        // Logical not
+        document.write("<br>");
+        document.write("------------------------OutPut of Logical not------------------" );
+        document.write("<br>");
+        document.write(!1 + "<br>");
+        document.write(!0);
+
+        // Bitwise operators &, |, ~
+        document.write("<br>");
+        document.writeln(5 & 1);
+        document.writeln(5 | 1);
+        document.writeln(!5);
+        document.writeln(5 << 1);
+        document.writeln(5 >> 1);
+        document.write("<br>");
+        
+        // Relational operators
+        document.write("------------------------Realtional Operators------------------" );
+        document.write("<br>");
+        document.writeln(1 > 2 );
+        document.writeln(3 > 1);
+        document.writeln(3 >= 1);
+        document.writeln(3 <= 1);
+        document.writeln(1 == 1);
+        document.writeln("<br>");
+
+        // Assignment operators
+        document.write("------------------------Assignment Operators------------------" );
+        document.write("<br>");
+        document.writeln(a += 3);
+        var n1 = 5, n2 = 6, n3 = 4, n4 = 7;
+        document.writeln(n1 -= 2);
+        document.writeln(n2 *= 2);
+        document.writeln(n3 /= 2);
+        document.writeln(n4 %= 2);
+
+        var x = "1", y = 1;
+        document.write("<br>")
+        document.write(x === y)
+    </script>
+  </body>
+</html>
