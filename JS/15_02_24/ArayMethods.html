@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayMethods</title>
+    <style>
+        html{
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        const arr=[40, 30, 20, 10, 60];
+        document.writeln(arr.length+"<br>");
+        for(let i=0; i<arr.length;i++)
+        {
+            document.write(arr[i]+"<br>");
+        }
+        arr.push(70);
+        arr.push(80);
+        document.write("After push ,method <br>")
+        document.write(arr);
+        document.write("<br>");
+        arr.pop();
+        document.write("After pop method <br>")
+        document.writeln(arr);
+        const arr1=arr.slice(0,4);
+        document.write("<br>");
+        document.write("After slice method <br>")
+        document.writeln(arr1);
+        //Slpice method with add
+        var colors=["red", "green", "blue"];
+        colors.splice(1,0,"pink", "purple");
+        document.write("After splice with add <br>");
+        document.writeln(colors);
+        document.write("<br>");
+        // Red pink purple green blue
+        // Splice method with delete
+        document.write("<br>");
+        colors.splice(1, 2);
+        document.write("After splice method with deleted <br>");
+        document.writeln(colors)
+        
+        document.write("<br>");
+        document.write("<br>");
+        
+        var numbers = [1, 2, 4, 5, 8, 10, 9];
+        document.writeln(numbers)
+        document.write("<br>");
+        numbers.splice(4,2);
+        document.writeln(numbers)
+        
+        numbers.splice(4,0, 10);
+        document.write("<br>");
+        document.writeln(numbers)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

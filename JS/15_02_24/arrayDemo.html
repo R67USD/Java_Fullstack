@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        body{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const arr=[10, 20, 30, 40, 50, 60];
+        const colors=["red", "black", "green"]
+        //Accessing singlem element
+        document.writeln(arr[3], "<br>");
+        //Accessing all elements of an array
+        document.writeln("Arrya element are <br>")
+        for (let i = 0; i < 5; i++) {
+            document.writeln(arr[i]);    
+        }
+        document.writeln("<br>")
+        //for -of loop
+        for(let x of colors)
+        {
+            document.writeln(x);
+        }
+        document.writeln("<br>")
+        
+        // for in loop used to get the index of an arry
+        document.write("Array indices are <br>");
+        for (let i in arr) {
+            document.writeln(i);
+        }
+        </script>
+</body>
+</html>
