@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMproperty3</title>
+    <script>
+        function getAllelement () {
+            const node = document.getElementsByClassName("myclass")[1];
+            document.getElementById("p2").innerHTML=node.nodeName;
+        }
+    </script>
+</head>
+<body>
+    <p class="myclass">This is first paragraph</p>
+    <div class="myclass">This is a Div </div>
+    <p id="p2"></p>
+    <button onclick="getAllelement()">GetAllelement</button>
+</body>
+</html>

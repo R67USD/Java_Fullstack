@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMproperty</title>
+    <script>
+        function changeText(){
+            document.getElementById("p1").innerHTML="Text box is seleted";
+        }
+        function getChildNodes(){
+            const arr = document.body.childNodes;
+            for(let i = 0; i<arr.length; i++)
+            {
+                document.write(arr[i].nodeName+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Dom properties</h2>
+    <input type="text" onfocus="changeText()">
+    <p id="p1"></p>
+    <button onclick="getChildNodes()">fqefwef</button>
+</body>
+</html>
