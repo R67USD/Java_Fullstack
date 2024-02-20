@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenetHandling</title>
+    <script>
+        function append() {
+            var p = document.createElement("p"); 
+            var x = prompt("Enter your nodes")
+
+            const node = document.createTextNode(x);
+            p.appendChild(node); // appends childnode as its last node
+            document.body.appendChild(p);
+        }
+
+
+        function remove() {
+            // const node = document.body.lastchild;
+            // node.remove();
+            document.body.removeChild(document.body.lastChild);
+        }
+
+        function removewithoutP() {
+            var x = document.getElementById("h"); //h2
+            x.parentNode.removeChild(x);
+        }
+    </script>
+</head>
+<body>
+    <h1>This is append and remove child node demp</h1>
+    <h2 id="h">This is h2 tag</h2>
+    <input type="button" value="append para" onclick="append()">
+    <input type="button" value="remove para" onclick="remove()">
+    <input type="button" value="removewithoutP" onclick="removewithoutP()">
+</body>
+</html>

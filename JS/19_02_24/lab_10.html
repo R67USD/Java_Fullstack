@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_10</title>
+    <script>
+        function upperCase() {
+            var paragraph = document.getElementById("Lab_1");
+            var text =  paragraph.innerText;
+            paragraph.innerText = text.toUpperCase();
+        }
+        
+        function mousenter(color1) {
+            
+            var paragraph = document.getElementById("Lab_2").style.color=color1;
+            
+        }
+    </script>
+</head>
+<body>
+    <p id="Lab_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum, illo enim molestias ea reprehenderit beatae numquam libero deserunt, pariatur fugiat! Fugiat facere eaque nostrum molestiae temporibus cumque incidunt deleniti.</p>
+    <button onclick="upperCase()">Change the Case</button>
+
+    <p id="Lab_2" onmouseenter="mousenter('red')" onmouseleave="mousenter('green')">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum, illo enim molestias ea reprehenderit beatae numquam libero deserunt, pariatur fugiat! Fugiat facere eaque nostrum molestiae temporibus cumque incidunt deleniti.</p>
+</body>
+</html>
