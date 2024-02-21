@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectDemo</title>
+    <style>
+        body{
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        var a = document.write("Javascript Object Demo <br>"); 
+        var person = {id:101, name:"Neha", sal:45000.0};
+        document.writeln(person.id+" "+person.name+" "+ person.sal+"<br>")
+
+        // 2nd  way empty object 
+        var car={};
+            car.brand = "TATA";
+            car.price = 70000.0;
+            car.color = "Red";
+        document.writeln(car.brand+" "+car.price+" "+car.color+"<br>")
+
+        // 3rd way using constructor
+        function Student(rollNum, sname, scity)
+        {
+            this.rollNum=rollNum;
+            this.sname=sname;
+            this.scity=scity;
+        }
+
+        var s1 = new Student(10, "Sumit", "Pune");
+        document.writeln(s1.rollNum+" "+s1.sname+" "+s1.scity+"<br>");
+        var s2 = new Student(20, "Amar", "Nashik");
+        document.writeln(s2.rollNum+" "+s2.sname+" "+s2.scity+"<br>");
+
+    </script>
+</head>
+<body>
+    <!-- <h1>Javascript Object Demo</h1> -->
+</body>
+</html>

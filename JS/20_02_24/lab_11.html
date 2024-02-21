@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvenetHandling</title>
+    <style>
+        body{
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        function append() {
+            var p = document.createElement("p"); 
+            var x = prompt("Enter your nodes")
+
+            const node = document.createTextNode(x);
+            p.appendChild(node); // appends childnode as its last node
+            var divElement = document.getElementById('append');
+            divElement.appendChild(p);
+        }
+        
+        
+        function remove() {
+            // const node = document.body.lastchild;
+            // node.remove();
+            var divElement = document.getElementById('append');
+            var childToRemove = divElement.firstChild;
+    divElement.removeChild(childToRemove);
+        }
+
+        function removewithoutP() {
+            var x = document.getElementById("h"); //h2
+            x.parentNode.removeChild(x);
+        }
+
+        function rewrite () {
+            var v = prompt("Enter the changes");
+            var p = document.getElementsByTagName("li"); 
+
+            p[1].innerHTML=v;
+
+        }
+    </script>
+</head>
+<body>
+    <h2 id="h">Lab_1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit fuga nulla, quaerat nesciunt quam excepturi aliquam quo rem dolor beatae aperiam, optio modi voluptatem dolorum minima, iusto reiciendis sapiente.</p>
+    
+    <div id="append">
+        
+    </div>
+    
+    <input type="button" value="remove para" onclick="remove()">
+    <input type="button" value="append para" onclick="append()">
+    
+    <ul class="ulc">
+        <li>C</li>
+        <li>C++</li>
+        <li>Rust</li>
+    </ul>
+
+    <input type="button" value="remove para" onclick="rewrite ()">
+</body>
+</html>

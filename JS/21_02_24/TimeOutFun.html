@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeOutFun </title>
+</head>
+<body>
+    <script>
+        var timer = setTimeout(printHello, 2000);
+            console.log(timer);
+        
+        function printHello()
+        {
+            document.getElementById('p1').innerHTML="Hello All";
+        }
+
+        function stopPrinting()
+        {
+            clearTimeout(timer);
+        }
+
+        var myvar=setInterval(() => {alert("Welcome to SevenMentor")}, 5000);
+
+        function myInterval() {
+            clearInterval(myvar);
+        }
+
+    </script>
+    <p id="p1"></p>
+    <div id="d1"></div>
+    <button type="button" onclick="stopPrinting()">Stop printing</button>
+    <button type="button" onclick="myInterval()">Stop Interval</button>
+</body>
+</html>
