@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvenetHandling</title>
+    <title>Lab_11</title>
     <style>
         body{
             font-family: monospace;
@@ -16,7 +16,7 @@
 
             const node = document.createTextNode(x);
             p.appendChild(node); // appends childnode as its last node
-            var divElement = document.getElementById('append');
+            var divElement = document.getElementById('ulc');
             divElement.appendChild(p);
         }
         
@@ -35,10 +35,23 @@
         }
 
         function rewrite () {
+            var a = prompt("Enter the Element");
             var v = prompt("Enter the changes");
             var p = document.getElementsByTagName("li"); 
 
-            p[1].innerHTML=v;
+            var bool = false;
+
+            for ( var i = 0; i < p.length; i++)
+            {
+                if(p[i].textContent.toLowerCase() === a.toLowerCase())
+                {
+                    p[i].innerHTML=v;
+                    bool = true;
+                }
+            }
+            if (!bool){
+                alert("Elemnt was not found!404");
+            }
 
         }
     </script>
@@ -54,12 +67,17 @@
     <input type="button" value="remove para" onclick="remove()">
     <input type="button" value="append para" onclick="append()">
     
-    <ul class="ulc">
-        <li>C</li>
+    <ul id="ulc">
+        <!-- <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
         <li>C++</li>
-        <li>Rust</li>
+        <li>Ruby</li>
+        <li>C#</li>
+        <li>PHP</li> -->
+    
     </ul>
 
-    <input type="button" value="remove para" onclick="rewrite ()">
+    <input type="button" value="change Contain  " onclick="rewrite ()">
 </body>
 </html>

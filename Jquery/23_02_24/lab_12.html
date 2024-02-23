@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab_12</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        font-family: monospace;
+        font-weight: bolder;
+      }
+      p {
+        font-size: 35px;
+        padding: 5px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        var isToggled = false;
+        $("p").hide();
+
+        $("button").click(function () {
+          if (!isToggled) {
+            $("button").text("Toggle off");
+            $("p").show();
+            isToggled = true;
+          } else {
+            $("button").text("Toggle on");
+            $("p").hide();
+            isToggled = false;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      accusamus quibusdam laborum optio vel cum esse quasi in a, libero mollitia
+      ratione id rerum exercitationem dolor, autem excepturi deleniti officiis.
+    </p>
+    <button>Toggle on</button>
+  </body>
+</html>

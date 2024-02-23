@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        body{
+            font-family: monospace;
+            
+        }
+    </style>
+    <script>
+        function Student(rollNum, sname, smarks)
+        {
+            this.rollNum=rollNum;
+            this.sname=sname;
+            this.smarks=smarks;
+        }
+        Student.prototype.getName=function(){
+            return this.sname;
+        }
+
+        var s1 = new Student(10, "Meena", 67);
+        document.write(s1.getName());
+        Student.prototype.getMarks=function(){
+            return this.smarks;
+        }
+
+        // s1.getMarks=function(){
+        //     return this.smarks;
+        // }
+
+        document.write("S1 mark is "+s1.getMarks()+"<br>");
+        var s2=new Student(20, "Neha", 78);
+        document.writeln("s2 marks is "+s2.getMarks()+"<br>");
+        document.write("S2 name is "+s2.getName());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
