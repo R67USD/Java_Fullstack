@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_13</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="../23_02_24/Jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function() {
+                $("p").fadeToggle(3000);
+                alert($("p").text())
+            })
+        })
+    </script>
+       <style>
+        *{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam ad velit eveniet quis accusamus veniam dicta deleniti soluta corporis, repellendus placeat? Sunt porro impedit asperiores accusantium laborum voluptatibus odit!</p>
+    <button >Click</button>
+</body>
+</html>

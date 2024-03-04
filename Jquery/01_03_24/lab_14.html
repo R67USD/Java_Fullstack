@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jqueryDemo2</title>
+    <title>Lab_14</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            $("p").click(function(){
-                $(this).hide() // effectmethdos
-            })
             $("button").click(function(){
-                $("div").hide();
+                $("div").css("position","relative").animate({ "left":"-30%", "top":"-100px"}, "slow")
             })
         })
 
     </script>
     <style>
-        *{
-            font-family: monospace;
-        }
     </style>
 </head>
-<body>
-    <h1>Jquery Demo with CDN link</h1>
-    <p>This is paragraph tag</p>
-    <div>Hide this div tag on button click</div> <br>
-    <button>Hide Dive</button>
+<body style="background-color: #1b1b1b;">
+    <div style="width: 31.25rem; height: 25rem; border: 0.4cap solid; margin: 12% auto; margin-bottom: 0; border-radius: 5%; ">
+        
+    </div>
+    <button style="padding: 10px; display: block ; margin: 2% auto; font-family: monospace;">
+        Change Position
+    </button>
 </body>
 </html>
